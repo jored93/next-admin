@@ -5,6 +5,10 @@
     --textSoft: #b7bac1;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
