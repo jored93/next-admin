@@ -4,7 +4,7 @@ import Table from '../../ui/components/table';
 import Button from '../../ui/components/button';
 import Link from "next/link";
 
-const Catalog = () => {
+const CatalogDetail = () => {
   return (
     <div className={styles.table_container}>
       <div className={styles.top}>
@@ -24,4 +24,4 @@ const Catalog = () => {
   )
 }
 
-export default Catalog
+export default CatalogDetail

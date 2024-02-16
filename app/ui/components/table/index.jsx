@@ -1,5 +1,6 @@
-import styles from '../../styles/table.module.css'
+import styles from './table.module.css'
 import Image from "next/image";
+import Button from '../button';
 import Link from "next/link";
 
 const index = () => {
@@ -18,13 +19,13 @@ const index = () => {
             <tbody>
                 <tr>
                     <td>
-                        <div className={styles.user}>
+                        <div className={styles.item}>
                             <Image
                                 src={"/noavatar.png"}
                                 alt=""
                                 width={40}
                                 height={40}
-                                className={styles.userImage}
+                                className={styles.itemImage}
                             />
                             username
                         </div>
@@ -33,55 +34,23 @@ const index = () => {
                     <td>CreatedAt</td>
                     <td>Admin</td>
                     <td>Active</td>
-                    {/* <td>
+                    <td>
                         <div className={styles.buttons}>
-                            <Link href={`/dashboard/users/`}>
-                                <button className={`${styles.button} ${styles.view}`}>
-                                    View
-                                </button>
+                            <Link href="/dashboard/catalog">
+                                <Button
+                                    type="button"
+                                    className="btn btn-success"
+                                    title="View"
+                                />
                             </Link>
-                            <form >
-                                <input type="hidden" name="id" />
-                                <button className={`${styles.button} ${styles.delete}`}>
-                                    Delete
-                                </button>
-                            </form>
+                            <Button
+                                type="button"
+                                className="btn btn-danger"
+                                title="Delete"
+                            />
                         </div>
-                    </td> */}
+                    </td>
                 </tr>
-                {/* <tr>
-                    <td>
-                        <div className={styles.user}>
-                            <Image
-                                src={"/noavatar.png"}
-                                alt=""
-                                width={40}
-                                height={40}
-                                className={styles.userImage}
-                            />
-                            username
-                        </div>
-                    </td>
-                    <td>eduardorrala@live.com</td>
-                    <td>CreatedAt</td>
-                    <td>Admin</td>
-                    <td>Active</td>
-                    <td>
-                        <div className={styles.buttons}>
-                            <Link href={`/dashboard/users/`}>
-                                <button className={`${styles.button} ${styles.view}`}>
-                                    View
-                                </button>
-                            </Link>
-                            <form >
-                                <input type="hidden" name="id" />
-                                <button className={`${styles.button} ${styles.delete}`}>
-                                    Delete
-                                </button>
-                            </form>
-                        </div>
-                    </td>
-                </tr> */}
             </tbody>
         </table>
     )

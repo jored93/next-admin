@@ -4,14 +4,14 @@ import styles from "./sidebar.module.css";
 import {
     MdDashboard,
     MdSupervisedUserCircle,
-    MdShoppingBag,
+    MdCategory,
     MdAttachMoney,
     MdWork,
     MdAnalytics,
     MdPeople,
     MdOutlineSettings,
     MdHelpCenter,
-    MdLogout,
+    MdOutlineCategory,
 } from "react-icons/md";
 
 
@@ -30,9 +30,14 @@ const menuItems = [
                 icon: <MdSupervisedUserCircle />,
             },
             {
-                title: "Products",
-                path: "/dashboard/products",
-                icon: <MdShoppingBag />,
+                title: "Catalogs",
+                path: "/dashboard/catalog",
+                icon: <MdOutlineCategory />,
+            },
+            {
+                title: "Catalog detail",
+                path: "/dashboard/catalog-detail",
+                icon: <MdCategory />,
             },
             {
                 title: "Transactions",
